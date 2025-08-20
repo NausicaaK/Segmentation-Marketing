@@ -120,11 +120,9 @@ ggcorrplot(cor_matrix,
 
 
 
-```
 
 Optimisation - échantillon - normalisation 
 
-```{r}
 # Sélection des variables optimisées
 variables_optimisées <- c("total_spent", "avg_spent", "unique_retailers", "total_points_earned")
 
@@ -165,7 +163,7 @@ segmentation_sample <- segmentation_sample %>%
   select(-MEMBER_ID)  # Supprime MEMBER_ID avant clustering
 
 
-```
+
 
 
 CLUSTERING - PCA - METHODE DU COUDE
@@ -246,7 +244,7 @@ ggplot(pca_data, aes(x = PC1, y = PC2, color = as.factor(cluster))) +
 table(pca_data$cluster)
 
 
-```
+
 
 
 CARACTERISTIQUE DES CLUSTERS
